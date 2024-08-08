@@ -1,0 +1,30 @@
+Thu Jul 25 21:11:24 +0300 2024
+Trace back: Could not open the database because the required debug information has not been generated.
+Please refer to the documentation for additional details.
+    while executing
+"error $res"
+    (procedure "objIsProc" line 14)
+    invoked from within
+"objIsProc $currentEnv [$incr_obj guiIsSchematic]"
+    (object "::.main_pane.schematic.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::updateFullView" body line 17)
+    invoked from within
+"updateFullView $itk_option(-windowobj)"
+    (object "::.main_pane.schematic.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::toggleFollowMode" body line 10)
+    invoked from within
+"::.main_pane.schematic.interior.cs.body.pw.df.c toggleFollowMode"
+    (in namespace inscope "::vsimwidgets::Dataflow" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Dataflow {::.main_pane.schematic.interior.cs.body.pw.df.c toggleFollowMode}"
+    invoked from within
+".main_pane.schematic.interior.cs.body.pw.df.schem.follow invoke"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke]"
+    (procedure "tk::ButtonUp" line 24)
+    invoked from within
+"tk::ButtonUp .main_pane.schematic.interior.cs.body.pw.df.schem.follow"
+    (command bound to event)
+  <2:C:/questasim64_10.6c/win64/tk8.6/bgerror.tcl:106: ::tkerror {Could not open the database because the required debug information has not been generated.
+Please refer to the documentation for additional details.}
+  <1:eval:1: ::tk::dialog::error::bgerror {Could not open the database because the required debug information has not been generated.
+Please refer to the documentation for additional details.}
